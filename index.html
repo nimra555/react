@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0413a50a0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="react-header">
+    <div class="header-head">
+      <h2>Black Lives Matter.<span class="head-blue"> Support the Equal Justice Initiative.</span></h2>
+    </div>
+    <div class="nav">
+      <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" height="30px" alt="">
+      <span class="react">React</span>
+      <nav>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Community</a></li>
+          <li><i class="fas fa-search search"></i><input type="text" placeholder="Search"></li>
+          <li><a href="#">16 13 1</a></li>
+          <li><a href="#"><i class="fas fa-language lang"></i>Languages</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="get-started">
+    <h1>React</h1>
+    <p>A JavaScript library for building user interfaces</p>
+    <button class="start">
+      Get Started
+    </button>
+    <span class="tutorial">
+      Take the Tutorial >
+    </span>
+  </section>
+  <section class="text">
+    <div class="declarative">
+      <h3> Declarative </h3>
+      <p>
+        React makes it painless to create interactive UIs. Design simple views for each state in your application, and
+        React will efficiently update and render just the right components when your data changes.
+      </p>
+      <br> <br>
+      <p>
+        Declarative views make your code more predictable and easier to debug.
+      </p>
+    </div>
+    <div class="component">
+      <h3>Component-Based</h3>
+      <p>
+        Build encapsulated components that manage their own state, then compose them to make complex UIs.
+      </p>
+      <br> <br>
+      <p>
+        Since component logic is written in JavaScript instead of templates, you can easily pass rich data through your
+        app and keep state out of the DOM.
+      </p>
+    </div>
+    <div class="learn">
+      <h3>Learn Once, Write Anywhere</h3>
+      <p>
+        We don’t make assumptions about the rest of your technology stack, so you can develop new features in React
+        without rewriting existing code.
+      </p>
+      <br> <br>
+      <p>
+        React can also render on the server using Node and power mobile apps using React Native.
+      </p>
+    </div>
+  </section>
+  <section class="simple-component">
+    <div class="component">
+      <h2>A Simple Component</h2>
+      <p>
+        React components implement a render() method that takes input data and returns what to display. This example
+        uses an XML-like syntax called JSX. Input data that is passed into the component can be accessed by render() via
+        this.props.
+      </p>
+      <span id="jsx">JSX is optional and not required to use React.</span>
+      <span class="jsx1"> Try the <br> Babel REPL to see the raw JavaScript code produced by <br> the JSX compilation step.</span>
+    </div>
+    <div class="simple-image">
+      <img src="code.svg" alt="editor" height="350px">
+    </div>
+    <div class="result-component">
+      <h4>Result</h4>
+      <p>Hello Taylor</p>
+    </div>
+  </section>
+  <section class="stateful">
+    <div class="state">
+      <h2>A Stateful Component</h2>
+      <p>In addition to taking input data (accessed via this.props), a component can maintain internal state data
+        (accessed via this.state). When a component’s state data changes, the rendered markup will be updated by
+        re-invoking render().
+      </p>
+    </div>
+    <div class="simple-image">
+      <img src="code.svg" alt="editor" height="350px">
+    </div>
+    <div class="result-component">
+      <h4>Result</h4>
+      <p>Seconds: 2260</p>
+    </div>
+  </section>
+  <section class="application">
+    <div class="app">
+      <h2>An Application</h2>
+      <p>Using props and state, we can put together a small Todo application. This example uses state to track the
+        current list of items as well as the text that the user has entered. Although event handlers appear to be
+        rendered inline, they will be collected and implemented using event delegation.
+      </p>
+    </div>
+    <div>
+      <img src="code.svg" alt="editor" height="350px">
+    </div>
+    <div class="result">
+      <h4>Result</h4>
+      <h1>TODO</h1>
+      <p>What needs to be done?</p>
+      <input type="text" placeholder="Enter text">
+      <button>Add</button>
+    </div>
+  </section>
+  <section class="plugin">
+    <div class="plug">
+      <h2>A Component Using External Plugins</h2>
+      <p>React allows you to interface with other libraries and frameworks. This example uses remarkable, an external
+        Markdown library, to convert the value in real time.
+      </p>
+    </div>
+    <div class="plug-image">
+      <img src="code.svg" alt="editor" height="350px">
+    </div>
+    <div class="result">
+      <h4>Result</h4>
+      <h1>Input</h1>
+      <p>Enter some markdown</p>
+      <textarea name="" id="" cols="30" rows="10">Hello, **world**!</textarea>
+      <h1>Output</h1>
+      <p>Hello, world!</p>
+    </div>
+  </section>
+  <section class="butn">
+    <button class="start">
+      Get Started
+    </button>
+    <span class="tutorial">
+      Take the Tutorial >
+    </span>
+  </section>
+  <section class="footer">
+    <div class="footer-img">
+      <img src="logo.png" alt="logo" width="200px">
+      <p>Copyright © 2020 Facebook Inc.</p>
+    </div>
+    <div class="doc">
+      <ul>Docs
+        <li>Installation</li>
+        <li>Main Concepts</li>
+        <li>Advanced Guides</li>
+        <li>API Reference</li>
+        <li>Hooks</li>
+        <li>Testing</li>
+        <li>Concurrent Mode (Experimental)</li>
+        <li>Contributing</li>
+        <li>FAQ</li>
+      </ul>
+      <ul>
+        COMMUNITY
+        <li>Code of Conduct</li>
+        <li>Community Resources</li>
+      </ul>
+    </div>
+    <div class="channel">
+      <ul>
+        CHANNELS
+        <li>GitHub</li>
+        <li>Stack Overflow</li>
+        <li>Discussion Forums</li>
+        <li>Reactifilux Chat</li>
+        <li>Dev Community</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+      </ul>
+      <ul>
+        MORE
+        <li>Tutorial</li>
+        <li>Blog</li>
+        <li>Acknowledgement</li>
+        <li>React Native </li>
+        <li>Privacy</li>
+        <li>Terms</li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+</html>
